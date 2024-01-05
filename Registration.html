@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> Welcome to AMAZON website</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="validation.js">
+</script>
+</head>
+<body>
+<center>
+<h3>Registration Form </h3>
+<br/>
+<form name="f1" onsubmit="return form1_validation()">
+<table cellpadding="1" align="center" >
+<tr> <td> Name:*</td>
+<td> <input type="text" name="username"></td></tr>
+<tr> <td>Password:*</td>
+<td> <input type="password" name="password"></td></tr>
+<tr> <td>Email ID:*</td>
+<td> <input type="text" name="email"></td></tr>
+<tr> <td>Phone Number:*</td>
+<td> <input type="text" name="phno"></td></tr>
+<tr> <td valign="top">Gender:*</td>
+<td> <input type="radio" name="radio" value="1">Male<br>
+<input type="radio" name="radio" value="2">Female</td></tr>
+<tr> <td>Date of Birth:*</td>
+<td> dd: <select name=dd >
+<option> </option>
+<script type="text/javascript">
+for(i=1;i<=31;i++)
+document.write("<option value=i>"+i+"</option>");
+</script> </select>
+mm: <select name=mm>
+<option> </option>
+<script type="text/javascript">
+for(i=1;i<=12;i++)
+document.write("<option value=i>"+i+"</option>");
+</script> </select>
+yyyy: <select name=yyyy>
+<option> </option>
+<script type="text/javascript">
+for(i=1880;i<=2008;i++)
+document.write("<option value=i>"+i+"</option>");
+</script> </select>
+</td></tr>
+<tr> <td valign="top">Language Known:*</td>
+<td> <input type="checkbox" name="checkbox" value="English">English<b <input
+type="checkbox" name="checkbox" value="Telugu">Telugu<br>
+<input type="checkbox" name="checkbox" value="Hindi">Hindi<br>
+<input type="checkbox" name="checkbox" value="Tamil">Tamil
+</td></tr>
+<tr> <td valign="top">Address:*</td>
+<td><textarea name="address"></textarea></td>
+<tr><td></td><td><input type="submit" value="submit" hspace="10">
+<input type="reset" value="reset"></td></tr>
+<tr> <td colspan=2 >*<font color="#FF0000">fields are mandatory</font>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
